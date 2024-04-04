@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>SketchBook</title>
+</head>
+<body>
+    <div class="field">
+        
+        <canvas id="canvas" ondrop="drop(event)"  öndragover="allowDrop(event)"></canvas>
+        <div class="tools">
+            <div class="dropdown">
+                <button onclick="toggleDropdown()" class="dropbtn button">Styles</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#"  onclick="selectFontStyle('Arial')">Arial</a>
+                  <a href="#" onclick="selectFontStyle('Times New Roman')">Times New Roman</a>
+                  <a href="#" onclick="selectFontStyle('MV Boli')">MV Boli</a>
+                  <!-- Add more font styles as needed -->
+                </div>
+              </div>
+            <button id="text" type="button" class="button">Text</button>
+            
+
+            <button type="button" onClick="undo()"  class="button">Undo</button>
+            <button type="button" onClick="clear_canvas()" class="button">Clear</button>
+            <input onInput="draw_color=this.value" type="color" class="color-picker">
+            <input  type="range" min="1" max="100" class="pen-range" onInput="draw_width = this.value">
+            <label for="uploader" class="uploader">Select file:</label>
+            <button class="uploadbutton"><input type="file" id="uploader" class="uploader"/></button>
+            <button type="button" class="button"><a id="canvasDownload" class="downloader" href="#" download="my.jpg">Download</a></button>
+                </div>
+            </div>
+            
+    <script src="index.js"></script>
+</body>
+</html>

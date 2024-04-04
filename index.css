@@ -1,0 +1,102 @@
+body{
+    margin:0px;
+    padding:30px;
+    font-family:"Mukta";
+    overflow:hidden;
+    background: #313131;
+}
+/*.field
+{
+    border:2px solid white;
+    height:50rem;
+    width:50rem;
+    margin:auto;
+}*/
+.tools
+{
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    margin-top:15px;
+}
+canvas{
+    box-shadow:-3px 2px 9px 13px black;
+    cursor:pointer;
+}
+.tools .button
+{
+    align-self:center;
+    width:80px;
+    height:40px;
+    cursor:pointer;
+    color:white;
+    background:#222;
+    font-weight:bold;
+    margin:0 15px;
+}
+
+.color-picker
+{
+    align-self:center;
+    margin:0 10px;
+    height:40px
+}
+.uploader
+{   
+    
+    align-self:center;
+    margin:0 10px;
+    color:white;
+}
+.uploadbutton
+{
+    background-color: #313131;
+}
+.downloader
+{
+    
+    margin-top:0.5rem;
+    color:white;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 0.9rem;
+}
+.dropbtn
+{
+    background-color: inherit;
+    color:#f1f1f1
+}
+.dropdown-content a {
+    color: black;
+    padding: 1px 1px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #3b3939;
+}
+
+.show {
+    display: block;
+}
+.close
+{
+    display:none
+}
+#myTextarea
+{
+    display:none
+}
